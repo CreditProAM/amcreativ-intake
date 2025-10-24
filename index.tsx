@@ -405,13 +405,9 @@ const App = () => {
     <div className="app-container">
       <header className="app-header">
         <div className="header-content">
-          <div className="logo-container">
-            <img src="/logo.png" alt="A.M. Creativ" className="logo" />
-            <div className="header-text">
-              <h1>A.M. Creativ — Strategic Video Marketing Discovery</h1>
-              <p>Professional video marketing consultation for established businesses, real estate professionals, and service providers. Let's elevate your brand's market presence.</p>
-            </div>
-          </div>
+          <img src="/logo.png" alt="A.M. Creativ" className="logo" />
+          <h1>Strategic Video Marketing Discovery</h1>
+          <p>Professional video marketing consultation for established businesses, real estate professionals, and service providers. Let's elevate your brand's market presence.</p>
         </div>
       </header>
       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">

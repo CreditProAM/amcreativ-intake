@@ -461,7 +461,7 @@ const App = () => {
                     {data.deliverables.decisionMaker === 'I need team/broker approval' && (
                         <Card title={QUESTION_DEFS['deliverables.stakeholders'].label}><TextInput placeholder={QUESTION_DEFS['deliverables.stakeholders'].placeholder} value={data.deliverables.stakeholders} onChange={(e) => set("deliverables.stakeholders", e.target.value)} /></Card>
                     )}
-                     <p className="social-proof md-col-span-2">ðŸ† Trusted by 50+ brands and professionals in South Florida.</p>
+                     <p className="social-proof md-col-span-2">🏆 Trusted by 50+ brands and professionals in South Florida.</p>
                 </div>
             </section>
         )}

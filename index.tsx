@@ -399,7 +399,7 @@ const App = () => {
   );
   
   const isExploring = data.deliverables.decisionMaker === "Just exploring options for now";
-  const finalButtonText = isExploring ? "Get Free Strategy Guide" : "Claim My Personalized Blueprint";
+  const finalButtonText = isExploring ? "Get Free Strategy Guide" : "Get My Blueprint";
 
   return (
     <div className="app-container">

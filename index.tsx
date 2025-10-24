@@ -119,7 +119,7 @@ const STEPS = [
   { id: "discovery", name: "1. Discover" },
   { id: "strategy", name: "2. Strategy" },
   { id: "deliverables", name: "3. Details" },
-  { id: "contact", name: "4. Partnership" },
+  { id: "contact", name: "4. Contact" },
   { id: "review", name: "5. Blueprint" },
 ] as const;
 

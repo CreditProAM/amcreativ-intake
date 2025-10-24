@@ -404,7 +404,7 @@ const App = () => {
   return (
     <div className="app-container">
       <header className="app-header">
-        <img src="/logo.png" alt="A.M. Creativ" className="logo" />
+        <div className="logo-text">A.M. CREATIV</div>
       </header>
       <div className="header-text">
         <h1>Strategic Films That Drive Revenue</h1>

@@ -422,17 +422,17 @@ const App = () => {
                     <Card title={QUESTION_DEFS['discovery.businessType'].label} required><ChipGroup options={QUESTION_DEFS['discovery.businessType'].options} value={[data.discovery.businessType]} onToggle={(v) => handleChipToggle('discovery.businessType', v, true)} /></Card>
                     <Card title={QUESTION_DEFS['discovery.primaryChallenge'].label} required>
                         <ChipGroup options={QUESTION_DEFS['discovery.primaryChallenge'].options} value={[data.discovery.primaryChallenge]} onToggle={(v) => handleChipToggle('discovery.primaryChallenge', v, true)} />
-        <p className="micro-testimonial">
-          <span className="stars">★★★★★</span>
-          <span className="quote">"Our business went from 3-4 consultations per month to 15+ qualified leads. The professional video content has transformed our client acquisition."</span>
-          <span className="author">- Michael R., Real Estate Broker</span>
-        </p>
                     </Card>
                     <Card title={QUESTION_DEFS['discovery.investmentHistory'].label} required><ChipGroup options={QUESTION_DEFS['discovery.investmentHistory'].options} value={[data.discovery.investmentHistory]} onToggle={(v) => handleChipToggle('discovery.investmentHistory', v, true)} /></Card>
                     <Card title={QUESTION_DEFS['discovery.urgencyTimeline'].label} required><ChipGroup options={QUESTION_DEFS['discovery.urgencyTimeline'].options} value={[data.discovery.urgencyTimeline]} onToggle={(v) => handleChipToggle('discovery.urgencyTimeline', v, true)} /></Card>
                     <Card title={QUESTION_DEFS['discovery.catalyst'].label}><ChipGroup options={QUESTION_DEFS['discovery.catalyst'].options} value={[data.discovery.catalyst]} onToggle={(v) => set('discovery.catalyst', v)} single /></Card>
                     <Card title={QUESTION_DEFS['discovery.valueAnchor'].label}><TextInput placeholder={QUESTION_DEFS['discovery.valueAnchor'].placeholder} value={data.discovery.valueAnchor} onChange={(e) => set("discovery.valueAnchor", e.target.value)} /></Card>
                 </div>
+                <p className="micro-testimonial">
+                    <span className="stars">★★★★★</span>
+                    <span className="quote">"Our business went from 3-4 consultations per month to 15+ qualified leads. The professional video content has transformed our client acquisition."</span>
+                    <span className="author">- Michael R., Real Estate Broker</span>
+                </p>
             </section>
         )}
         {step.id === 'strategy' && (

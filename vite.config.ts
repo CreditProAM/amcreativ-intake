@@ -7,6 +7,18 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
+    chunkSizeWarningLimit: 1000, // Increase warning limit to 1MB
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Split vendor libraries into separate chunks
+          vendor: ['react', 'react-dom'],
+          pdf: ['jspdf'],
+          // Keep AI-related code together
+          ai: ['@google/generative-ai']
+        }
+      }
+    }
   },
   server: {
     port: 3000,

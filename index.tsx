@@ -420,7 +420,7 @@ const App = () => {
                     <Card title={QUESTION_DEFS['discovery.primaryChallenge'].label} required>
                         <ChipGroup options={QUESTION_DEFS['discovery.primaryChallenge'].options} value={[data.discovery.primaryChallenge]} onToggle={(v) => handleChipToggle('discovery.primaryChallenge', v, true)} />
                         <p className="micro-testimonial">
-                            <span className="stars">â˜…â˜…â˜…â˜…â˜…</span>
+                            <span className="stars">★★★★★</span>
                             <span className="quote">"Our firm went from 3-4 consultations per month to 15+ qualified leads. The professional video content has transformed our client acquisition."</span>
                             <span className="author">- Michael R., Personal Injury Attorney</span>
                         </p>

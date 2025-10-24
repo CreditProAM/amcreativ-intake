@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
     <title>A.M Creativ | Professional Video Marketing Discovery</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap');
         
         :root {
             --background-color: #000000;
@@ -23,15 +26,48 @@
             --accent-color-hover: #1e3a8a;
             --error-color: #FF453A; /* iOS red */
             --recommend-color: #30D158; /* iOS green */
-            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             --radius-md: 12px;
             --radius-lg: 18px;
             --radius-xl: 24px;
             --shadow-lg: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-2xl: 48px;
         }
   
         * {
             box-sizing: border-box;
+        }
+
+        /* Anti-aliasing and crisp text rendering */
+        html, body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1;
+            font-kerning: normal;
+        }
+
+        /* Ensure all text elements are crisp */
+        h1, h2, h3, h4, h5, h6, p, span, div, input, textarea, button, label {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1, "liga" 1;
+            font-kerning: normal;
+            font-variant-ligatures: common-ligatures;
+        }
+
+        /* High-DPI display optimizations */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            h1, h2, h3, h4, h5, h6, p, span, div, input, textarea, button, label {
+                -webkit-font-smoothing: subpixel-antialiased;
+                text-rendering: geometricPrecision;
+            }
         }
 
         html {
@@ -50,6 +86,7 @@
             place-items: center;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
         }
         
         #root {
@@ -63,8 +100,8 @@
         }
         
         .app-header {
-            background-color: #1f2937;
-            border-bottom: 1px solid #374151;
+            background-color: transparent;
+            border-bottom: none;
             margin-bottom: 0;
             padding: 1rem 2rem;
             text-align: center;
@@ -85,10 +122,10 @@
             padding: 0 1rem;
         }
         .header-text h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: -0.04em;
-            margin: 0 0 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin: 1rem 0 0.5rem;
             color: #ffffff;
         }
         .header-text p {
@@ -172,15 +209,19 @@
             background-color: var(--input-background);
             border: 1px solid var(--border-color-dark);
             color: var(--text-primary);
-            padding: 0.75rem 1rem;
+            padding: var(--spacing-md) var(--spacing-lg);
             border-radius: var(--radius-md);
-            font-size: 1rem;
-            transition: border-color 0.2s, box-shadow 0.2s;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.4;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         .text-input:focus, .text-area:focus {
             outline: none;
             border-color: var(--accent-color);
-            box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.3);
+            box-shadow: 0 0 0 3px rgba(16, 68, 119, 0.1);
+            transform: translateY(-1px);
         }
         .text-input::placeholder, .text-area::placeholder {
             color: var(--text-placeholder);

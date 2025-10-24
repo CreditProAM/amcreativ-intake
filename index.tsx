@@ -407,8 +407,8 @@ const App = () => {
         <div className="logo-text">A.M Creativ</div>
       </header>
       <div className="header-text">
-        <h1>Strategic Films That Drive Revenue</h1>
-        <p>Helping Realtors & Brands Grow • From Invisible → Unforgettable</p>
+        <h1>Helping Brands Grow with Purpose</h1>
+        <p>From Invisible → Unforgettable</p>
       </div>
       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
         <input type="text" name="b_name" tabIndex={-1} value={hp} onChange={(e) => setHp(e.target.value)} autoComplete="off" />

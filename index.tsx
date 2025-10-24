@@ -493,7 +493,7 @@ const App = () => {
         <FooterNav stepIndex={stepIndex} onBack={back} onNext={stepIndex === STEPS.length - 1 ? handleSubmit : next} canNext={canNext} nextText={isLastStep(stepIndex) ? finalButtonText : "Next"} />
       </div>
       {activeTip && <p className="dynamic-tip">{activeTip.text}</p>}
-      <p className="footer">Â© {new Date().getFullYear()} A.M Creativ â€” From Invisible to Unforgettable</p>
+      <p className="footer">© {new Date().getFullYear()} A.M Creativ — From Invisible to Unforgettable</p>
     </div>
   );
 }

@@ -55,7 +55,7 @@ const QUESTION_DEFS: Record<string, {
     },
     'strategy.objectives': { label: "What's the main goal?", required: true, options: ["Get More Leads", "Build Trust & Credibility", "Increase Brand Awareness", "Convert Viewers to Clients"] },
     'strategy.timeline': { label: "How soon do you need this?", required: true, options: ["Urgent (Under 2 weeks)", "Within a month", "In 1-2 months", "I'm flexible"] },
-    'strategy.budget': { label: "What's your estimated investment level?", required: true, options: ["<$1k", "$1â€“3k", "$3â€“5k", "$5â€“10k", "$10k+", "TBD"], description: "Let's discuss investment. We work with professionals at every stage:" },
+    'strategy.budget': { label: "What's your estimated investment level?", required: true, options: ["<$1k", "$1-3k", "$3-5k", "$5-10k", "$10k+", "TBD"], description: "Let's discuss investment. We work with professionals at every stage:" },
     'strategy.channels': { label: "Where will this strategy be deployed?", required: true, options: ["Instagram Reels", "TikTok", "YouTube", "Facebook", "LinkedIn", "Website" ] },
     'strategy.tone': { label: "What's the strategic tone?", required: true, options: ["Clean & Minimal", "Bold & High-Energy", "Luxury & Polished", "Warm & Story-Driven"] },
 
@@ -89,9 +89,9 @@ const STRATEGIC_RECOMMENDATIONS: Record<string, { deliverables: string[], channe
 
 const BUDGET_TIPS: Record<string, string> = {
     "<$1k": "Ideal for a focused strategy call or a single, simple creative asset.",
-    "$1â€“3k": "Perfect for a core brand video or a small batch of high-impact social content.",
-    "$3â€“5k": "Enables a polished brand story or a multi-asset social media campaign.",
-    "$5â€“10k": "For comprehensive projects, brand films, or strategic monthly retainers.",
+    "$1-3k": "Perfect for a core brand video or a small batch of high-impact social content.",
+    "$3-5k": "Enables a polished brand story or a multi-asset social media campaign.",
+    "$5-10k": "For comprehensive projects, brand films, or strategic monthly retainers.",
     "$10k+": "For major campaigns, long-term growth partnerships, and significant ad strategies.",
     "TBD": "No problem. We'll define the investment based on the strategy we build together.",
 };

@@ -34,10 +34,10 @@ const QUESTION_DEFS: Record<string, {
     description?: string;
 }> = {
     // Step 1: Discover
-    'discovery.businessType': { label: "What best describes your practice?", required: true, options: ['Solo Practitioner (Attorney, Consultant)', 'Small Law Firm / Team (2-10 people)', 'Established Law Firm (10+ people)', 'Corporate Legal Department', 'Other Professional Services'] },
-    'discovery.primaryChallenge': { label: "What's your biggest marketing challenge?", required: true, options: ["Not enough visibility in my market", "Can't differentiate from other attorneys", "Don't know where to start with video marketing", "Inconsistent client acquisition", "Converting inquiries to retained clients", "Building trust and credibility online"] },
+    'discovery.businessType': { label: "What best describes your business?", required: true, options: ['Real Estate Agent/Broker', 'Law Firm/Attorney', 'Financial Services', 'Healthcare Practice', 'Consulting/Professional Services', 'Other Service Business'] },
+    'discovery.primaryChallenge': { label: "What's your biggest marketing challenge?", required: true, options: ["Not enough visibility in my market", "Can't differentiate from competitors", "Don't know where to start with video marketing", "Inconsistent client acquisition", "Converting inquiries to retained clients", "Building trust and credibility online"] },
     'discovery.investmentHistory': { label: "Have you invested in video or content creation before?", required: true, options: ["Yes, didn't get the results I wanted", "Yes, got some results but want more", "No, this is my first time", "I've tried myself, need professional help"] },
-    'discovery.valueAnchor': { label: "What would 5-10 qualified client consultations per month be worth to your practice?", placeholder: "$_____ per month in additional revenue", options: [] },
+    'discovery.valueAnchor': { label: "What would 5-10 qualified client consultations per month be worth to your business?", placeholder: "$_____ per month in additional revenue", options: [] },
     'discovery.urgencyTimeline': { label: "How long have you been thinking about investing in professional video?", required: true, options: ["Just started researching today", "A few weeks", "1-3 months", "6+ months (ready to make a decision)"] },
     'discovery.catalyst': { label: "What's driving you to explore this right now?", options: ["Slow season, need more leads", "Competitors are outpacing me", "Want to scale to next level", "Launching new service/focus area", "Just curious/exploring"] },
 
@@ -405,7 +405,7 @@ const App = () => {
     <div className="app-container">
       <header className="app-header">
         <h1>A.M. Creativ — Strategic Video Marketing Discovery</h1>
-        <p>Professional video marketing consultation for established businesses and legal professionals. Let's elevate your brand's market presence.</p>
+        <p>Professional video marketing consultation for established businesses, real estate professionals, and service providers. Let's elevate your brand's market presence.</p>
       </header>
       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
         <input type="text" name="b_name" tabIndex={-1} value={hp} onChange={(e) => setHp(e.target.value)} autoComplete="off" />
@@ -419,11 +419,11 @@ const App = () => {
                     <Card title={QUESTION_DEFS['discovery.businessType'].label} required><ChipGroup options={QUESTION_DEFS['discovery.businessType'].options} value={[data.discovery.businessType]} onToggle={(v) => handleChipToggle('discovery.businessType', v, true)} /></Card>
                     <Card title={QUESTION_DEFS['discovery.primaryChallenge'].label} required>
                         <ChipGroup options={QUESTION_DEFS['discovery.primaryChallenge'].options} value={[data.discovery.primaryChallenge]} onToggle={(v) => handleChipToggle('discovery.primaryChallenge', v, true)} />
-                        <p className="micro-testimonial">
-                            <span className="stars">★★★★★</span>
-                            <span className="quote">"Our firm went from 3-4 consultations per month to 15+ qualified leads. The professional video content has transformed our client acquisition."</span>
-                            <span className="author">- Michael R., Personal Injury Attorney</span>
-                        </p>
+        <p className="micro-testimonial">
+          <span className="stars">★★★★★</span>
+          <span className="quote">"Our business went from 3-4 consultations per month to 15+ qualified leads. The professional video content has transformed our client acquisition."</span>
+          <span className="author">- Michael R., Real Estate Broker</span>
+        </p>
                     </Card>
                     <Card title={QUESTION_DEFS['discovery.investmentHistory'].label} required><ChipGroup options={QUESTION_DEFS['discovery.investmentHistory'].options} value={[data.discovery.investmentHistory]} onToggle={(v) => handleChipToggle('discovery.investmentHistory', v, true)} /></Card>
                     <Card title={QUESTION_DEFS['discovery.urgencyTimeline'].label} required><ChipGroup options={QUESTION_DEFS['discovery.urgencyTimeline'].options} value={[data.discovery.urgencyTimeline]} onToggle={(v) => handleChipToggle('discovery.urgencyTimeline', v, true)} /></Card>
@@ -446,7 +446,7 @@ const App = () => {
                     </Card>
                     <Card title={QUESTION_DEFS['strategy.channels'].label} required className="md-col-span-2"><ChipGroup options={QUESTION_DEFS['strategy.channels'].options} value={data.strategy.channels} onToggle={(v) => toggleIn("strategy.channels", v)} recommendations={recommendedChannels} /></Card>
                     <Card title={QUESTION_DEFS['strategy.tone'].label} required className="md-col-span-2"><ChipGroup options={QUESTION_DEFS['strategy.tone'].options} value={data.strategy.tone} onToggle={(v) => toggleIn("strategy.tone", v)} /></Card>
-                    <p className="social-proof md-col-span-2">🎯 Professional video content generates 3-5x more qualified leads than traditional marketing for legal practices.</p>
+                    <p className="social-proof md-col-span-2">🎯 Professional video content generates 3-5x more qualified leads than traditional marketing for service-based businesses.</p>
                 </div>
             </section>
         )}

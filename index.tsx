@@ -404,8 +404,15 @@ const App = () => {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>A.M. Creativ — Strategic Video Marketing Discovery</h1>
-        <p>Professional video marketing consultation for established businesses, real estate professionals, and service providers. Let's elevate your brand's market presence.</p>
+        <div className="header-content">
+          <div className="logo-container">
+            <img src="/logo.png" alt="A.M. Creativ" className="logo" />
+            <div className="header-text">
+              <h1>A.M. Creativ — Strategic Video Marketing Discovery</h1>
+              <p>Professional video marketing consultation for established businesses, real estate professionals, and service providers. Let's elevate your brand's market presence.</p>
+            </div>
+          </div>
+        </div>
       </header>
       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
         <input type="text" name="b_name" tabIndex={-1} value={hp} onChange={(e) => setHp(e.target.value)} autoComplete="off" />

@@ -62,18 +62,42 @@
         }
         
         .app-header {
-            text-align: center;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
             margin-bottom: 2.5rem;
+            padding: 2rem 1rem;
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .logo {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+        .header-text {
+            text-align: center;
+            flex: 1;
+            min-width: 300px;
         }
         .app-header h1 {
             font-size: 2rem;
             font-weight: 700;
             letter-spacing: -0.04em;
             margin: 0 0 0.5rem;
+            color: #1f2937;
         }
         .app-header p {
             font-size: 1rem;
-            color: var(--text-secondary);
+            color: #6b7280;
             margin: 0 auto;
             max-width: 50ch;
             line-height: 1.5;
